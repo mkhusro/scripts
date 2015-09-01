@@ -124,7 +124,7 @@ if [ ! -f /usr/share/dse ] && [ $DSE_TEST -eq 0 ];then
 
     sudo touch $address_path/address.yaml
 	  sudo chmod a+w $address_path/address.yaml
-	  sudo echo -e "stomp_interface: $opscenter_ip\nhosts: ["`hostname -i`"]\nuse_ssl: 1\nthrift_max_conns: 10\nasync_pool_size: 10\nasync_queue_size: 20000" > $address_path/address.yaml
+	  sudo echo -e "stomp_interface: $opscenter_ip\nuse_ssl: 0" > $address_path/address.yaml
     sudo chown cassandra:cassandra $address_path/address.yaml
 
     echo " ******************* Datastax-agent installed ******************* "
