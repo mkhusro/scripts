@@ -117,3 +117,4 @@ if [ ! -f /usr/share/dse ] && [ $DSE_TEST -eq 0 ];then
     echo "vm.max_map_count = 131072" >> /etc/sysctl.conf
     echo 0 > /proc/sys/vm/zone_reclaim_mode
     sysctl -p
+    fi
