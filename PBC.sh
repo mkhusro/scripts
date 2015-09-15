@@ -7,8 +7,8 @@
 #*************************************************************************
 
 # Variables
-datastax_username="mohammed.siddiqui_cloudwick.com"
-datastax_password="aWtUW3c5anchPoq"
+datastax_username=""
+datastax_password=""
 dse_version="4.7.1"
 reponame=datastax
 url=http://$datastax_username:$datastax_password@rpm.datastax.com/enterprise
